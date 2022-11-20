@@ -1,0 +1,41 @@
+.slider-wrap { width: 1000px; height: 400px; margin: 50px auto; position: relative; overflow: hidden; }
+
+.slider-wrap #slider { width: 100%; height: 100%; position: absolute; left: 0; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0; padding: 0; -webkit-transition: 0.3s; transition: 0.3s; }
+
+.slider-wrap #slider li { list-style-type: none; float: left; width: 1000px; height: 400px; }
+
+.slider-wrap #slider li:nth-child(1) { background-color: red; }
+
+.slider-wrap #slider li:nth-child(2) { background-color: #ff8400; }
+
+.slider-wrap #slider li:nth-child(3) { background-color: #ffd500; }
+
+.slider-wrap #slider li:nth-child(4) { background-color: #00ff15; }
+
+.slider-wrap #slider li:nth-child(5) { background-color: #1900ff; }
+
+.slider-wrap .btn { position: absolute; width: 50px; height: 60px; top: 50%; margin-top: -25px; line-height: 57px; text-align: center; cursor: pointer; background: rgba(0, 0, 0, 0.1); z-index: 100; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-transition: 0.1s; transition: 0.1s; }
+
+.slider-wrap .btn.next { right: -50px; border-radius: 7px 0px 0px 7px; color: white; }
+
+.slider-wrap .btn.previous { left: -50px; border-radius: 0px 7px 7px 7px; color: white; }
+
+.slider-wrap .indicator-wrap { height: 15px; position: relative; text-align: center; min-width: 20px; margin-top: 350px; margin-left: auto; margin-right: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.slider-wrap .indicator-wrap li { border-radius: 50%; background: #fff; opacity: 0.5; position: relative; top: 0; cursor: pointer; margin: 0 4px; display: inline-block; width: 15px; height: 15px; }
+
+.slider-wrap .indicator-wrap li.active { width: 15px; height: 15px; opacity: 1; }
+
+.slider-wrap .control-wrap { top: 350px; right: 35px; width: auto; position: absolute; cursor: pointer; }
+
+.slider-wrap .control-wrap.play #play { display: none; }
+
+.slider-wrap .control-wrap.play #pause { display: block; }
+
+.slider-wrap .control-wrap.pause #play { display: block; }
+
+.slider-wrap .control-wrap.pause #pause { display: none; }
+
+.slider-wrap:hover .next { right: 0; }
+
+.slider-wrap:hover .previous { left: 0; }
